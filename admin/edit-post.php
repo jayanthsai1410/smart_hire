@@ -12,13 +12,15 @@ if(isset($_POST['update']))
 $posttitle=$_POST['posttitle'];
 $catid=$_POST['category'];
 $subcatid=$_POST['subcategory'];
+$experience = $_POST['experience'];
+$willing = $_POST['willing'];
 $postdetails=$_POST['postdescription'];
 $lastuptdby=$_SESSION['login'];
 $arr = explode(" ",$posttitle);
 $url=implode("-",$arr);
 $status=1;
 $postid=intval($_GET['pid']);
-$query=mysqli_query($con,"update tblposts set PostTitle='$posttitle',CategoryId='$catid',SubCategoryId='$subcatid',PostDetails='$postdetails',PostUrl='$url',Is_Active='$status',lastUpdatedBy='$lastuptdby' where id='$postid'");
+$query=mysqli_query($con,"update tblposts set PostTitle='$posttitle',CategoryId='$catid',SubCategoryId='$subcatid',experience ='$experience',willing='$willing',PostDetails='$postdetails',PostUrl='$url',Is_Active='$status',lastUpdatedBy='$lastuptdby' where id='$postid'");
 if($query)
 {
 $msg="Post updated ";
@@ -155,8 +157,6 @@ while($row=mysqli_fetch_array($query))
 <input type="text" class="form-control" id="posttitle" value="<?php echo htmlentities($row['title']);?>" name="posttitle" placeholder="Enter title" required>
 </div>
 
-
-
 <div class="form-group m-b-20">
 <label for="exampleInputEmail1">Category</label>
 <select class="form-control" name="category" id="category" onChange="getSubCat(this.value);" required>
@@ -179,7 +179,15 @@ while($result=mysqli_fetch_array($ret))
 <option value="<?php echo htmlentities($row['subcatid']);?>"><?php echo htmlentities($row['subcategory']);?></option>
 </select> 
 </div>
-         
+   <div class="form-group m-b-20">
+<label for="exampleInputEmail1">Experience</label>
+<input type="text" class="form-control" id="experience" value="<?php echo htmlentities($row['experience']);?>" name="experience" placeholder="Exp" required>
+</div>
+<div class="form-group m-b-20">
+<label for="exampleInputEmail1">Willing to work?</label>
+<input type="text" class="form-control" id="willing" value="<?php echo htmlentities($row['willing']);?>" name="willing" placeholder="Yes/no" required>
+</div>
+      
 
      <div class="row">
 <div class="col-sm-12">

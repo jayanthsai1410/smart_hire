@@ -22,7 +22,7 @@ echo "<script type='text/javascript'> document.location = 'manage-subadmins.php'
 <html lang="en">
     <head>
 
-        <title> | Manage Subadmins</title>
+        <title>EasyHire | Manage Subadmins</title>
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/components.css" rel="stylesheet" type="text/css" />

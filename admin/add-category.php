@@ -31,7 +31,7 @@ $error="Something went wrong . Please try again.";
 <html lang="en">
     <head>
 
-        <title>Newsportal | Add Category</title>
+        <title>EasyPortal | Add Domain</title>
 
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -70,16 +70,16 @@ $error="Something went wrong . Please try again.";
                         <div class="row">
 							<div class="col-xs-12">
 								<div class="page-title-box">
-                                    <h4 class="page-title">Add Category</h4>
+                                    <h4 class="page-title">Add Domain</h4>
                                     <ol class="breadcrumb p-0 m-0">
                                         <li>
                                             <a href="#">Admin</a>
                                         </li>
                                         <li>
-                                            <a href="#">Category </a>
+                                            <a href="#">Domain </a>
                                         </li>
                                         <li class="active">
-                                            Add Category
+                                            Add Doamin
                                         </li>
                                     </ol>
                                     <div class="clearfix"></div>
@@ -92,7 +92,7 @@ $error="Something went wrong . Please try again.";
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="card-box">
-                                    <h4 class="m-t-0 header-title"><b>Add Category </b></h4>
+                                    <h4 class="m-t-0 header-title"><b>Add Domain </b></h4>
                                     <hr />
                         		
 
@@ -124,14 +124,14 @@ $error="Something went wrong . Please try again.";
                         				<div class="col-md-6">
                         					<form class="form-horizontal" name="category" method="post">
 	                                            <div class="form-group">
-	                                                <label class="col-md-2 control-label">Category</label>
+	                                                <label class="col-md-2 control-label">Domain</label>
 	                                                <div class="col-md-10">
 	                                                    <input type="text" class="form-control" value="" name="category" required>
 	                                                </div>
 	                                            </div>
 	                                     
 	                                            <div class="form-group">
-	                                                <label class="col-md-2 control-label">Category Description</label>
+	                                                <label class="col-md-2 control-label">Domain Description</label>
 	                                                <div class="col-md-10">
 	                                                    <textarea class="form-control" rows="5" name="description" required></textarea>
 	                                                </div>

@@ -31,7 +31,7 @@ $error="Something went wrong . Please try again.";
 <html lang="en">
     <head>
 
-        <title>Newsportal | Add Sub Category</title>
+        <title>EasyHire | Add Skils</title>
 
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -70,16 +70,16 @@ $error="Something went wrong . Please try again.";
                         <div class="row">
 							<div class="col-xs-12">
 								<div class="page-title-box">
-                                    <h4 class="page-title">Add Sub-Category</h4>
+                                    <h4 class="page-title">Add Skills</h4>
                                     <ol class="breadcrumb p-0 m-0">
                                         <li>
                                             <a href="#">Admin</a>
                                         </li>
                                         <li>
-                                            <a href="#">Category </a>
+                                            <a href="#">Domain </a>
                                         </li>
                                         <li class="active">
-                                            Add Sub-Category
+                                            Add Skills
                                         </li>
                                     </ol>
                                     <div class="clearfix"></div>
@@ -92,7 +92,7 @@ $error="Something went wrong . Please try again.";
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="card-box">
-                                    <h4 class="m-t-0 header-title"><b>Add Sub-Category </b></h4>
+                                    <h4 class="m-t-0 header-title"><b>Add Skills </b></h4>
                                     <hr />
                         		
 
@@ -124,10 +124,10 @@ $error="Something went wrong . Please try again.";
                         				<div class="col-md-6">
                         					<form class="form-horizontal" name="category" method="post">
 	                                            <div class="form-group">
-	                                                <label class="col-md-2 control-label">Category</label>
+	                                                <label class="col-md-2 control-label">Domain</label>
 	                                                <div class="col-md-10">
 	                                                  <select class="form-control" name="category" required>
-                                                   <option value="">Select Category </option>
+                                                   <option value="">Select Domain </option>
 <?php
 // Feching active categories
 $ret=mysqli_query($con,"select id,CategoryName from  tblcategory where Is_Active=1");
@@ -145,7 +145,7 @@ while($result=mysqli_fetch_array($ret))
 
 
     <div class="form-group">
-                                                    <label class="col-md-2 control-label">Sub-Category</label>
+                                                    <label class="col-md-2 control-label">Skills</label>
                                                     <div class="col-md-10">
                                                         <input type="text" class="form-control" value="" name="subcategory" required>
                                                     </div>
@@ -157,7 +157,7 @@ while($result=mysqli_fetch_array($ret))
 
 
 	                                            <div class="form-group">
-	                                                <label class="col-md-2 control-label">Sub-Category Description</label>
+	                                                <label class="col-md-2 control-label">Skills Description</label>
 	                                                <div class="col-md-10">
 	                                                    <textarea class="form-control" rows="5" name="sucatdescription" required></textarea>
 	                                                </div>

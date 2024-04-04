@@ -2,7 +2,7 @@
 session_start();
 include('includes/config.php');
 error_reporting(0);
-if(strlen($_SESSION['login'])==0)
+if(strlen($_SESSION['login'])==0 )
   { 
 header('location:index.php');
 }
@@ -29,7 +29,7 @@ echo "<script>alert('Something went wrong . Please try again.');</script>";
 <html lang="en">
     <head>
 
-        <title>Newsportal |Edit Subadmin</title>
+        <title>EasyHire |Edit Subadmin</title>
 
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
